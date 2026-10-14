@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>remarkjs-theme with options and sourceUrl</title>
+  </head>
+  <body>
+    <script src="../../demo/vendor/remark.min.js"></script>
+    <script src="../../remark-theme.js"></script>
+    <script>
+      window.theme = remarkTheme({
+        key: "l",
+        attribute: "data-scheme",
+        storageKey: "my-deck-theme",
+        helpText: "Switch theme",
+      });
+      window.slideshow = remark.create({ sourceUrl: "slides.md" });
+    </script>
+  </body>
+</html>

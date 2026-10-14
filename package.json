@@ -1,0 +1,43 @@
+{
+  "name": "remarkjs-theme",
+  "version": "0.1.0",
+  "description": "Light and dark theme for remark.js slides: follows the system, toggles with a key, remembers the choice",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Piotr Kowalski",
+    "email": "piecioshka@gmail.com",
+    "url": "https://piecioshka.pl/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piecioshka/remarkjs-theme.git"
+  },
+  "homepage": "https://piecioshka.github.io/remarkjs-theme/demo/",
+  "keywords": [
+    "remark",
+    "remarkjs",
+    "slides",
+    "theme",
+    "dark-mode",
+    "plugin"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "playwright test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.0",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>remarkjs-theme demo</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# remarkjs-theme
+
+Press **d** to switch between light and dark
+
+---
+
+## How it works
+
+- the deck starts with the theme of your system
+- **d** toggles light and dark
+- the choice is saved in `localStorage`, so it survives a reload
+- `remarkTheme().reset()` follows the system again
+
+---
+
+## Styling
+
+The plugin only sets `data-theme="light"` or `data-theme="dark"` on `<html>`.
+
+```css
+:root[data-theme="dark"] {
+  --bg: #111827;
+  --fg: #f9fafb;
+}
+```
+
+---
+
+## Help screen
+
+The shortcut shows up on remark's help screen (**?** or **h**).
+
+---
+
+class: center, middle
+
+# Thanks
+</textarea>
+    <script src="vendor/remark.min.js"></script>
+    <script src="../remark-theme.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

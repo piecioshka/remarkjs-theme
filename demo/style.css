@@ -1,0 +1,49 @@
+:root {
+  --bg: #e5e7eb;
+  --slide-bg: #ffffff;
+  --fg: #111827;
+  --accent: #1d4ed8;
+  --code-bg: #f3f4f6;
+}
+
+:root[data-theme="dark"] {
+  --bg: #030712;
+  --slide-bg: #111827;
+  --fg: #f9fafb;
+  --accent: #93c5fd;
+  --code-bg: #1f2937;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: system-ui, sans-serif;
+}
+
+.remark-slide-content {
+  font-size: 28px;
+  background: var(--slide-bg);
+  color: var(--fg);
+}
+
+.remark-slide-content h1,
+.remark-slide-content h2 {
+  color: var(--accent);
+}
+
+.remark-slide-content code {
+  background: var(--code-bg);
+  border-radius: 4px;
+  padding: 0 0.2em;
+}
+
+.remark-slide-content pre code {
+  display: block;
+  padding: 0.6em 0.8em;
+}
+
+/* remark's highlight theme is light only; let the dark theme win. */
+:root[data-theme="dark"] .remark-slide-content .hljs {
+  background: var(--code-bg);
+  color: var(--fg);
+}
