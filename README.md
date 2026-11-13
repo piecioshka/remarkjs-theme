@@ -7,7 +7,7 @@
 
 > Light and dark theme for [remark.js](https://github.com/gnab/remark) slides. The deck starts with the theme of the system, `d` switches it, and the choice survives a reload.
 
-[![Light and dark theme of a remark.js deck](assets/screenshot.png)](https://piecioshka.github.io/remarkjs-theme/demo/)
+[![Light and dark theme of a remark.js deck](docs/screenshots/main.png)](https://piecioshka.github.io/remarkjs-theme/demo/)
 
 **Demo:** <https://piecioshka.github.io/remarkjs-theme/demo/> (press `d`)
 

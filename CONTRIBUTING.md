@@ -27,7 +27,7 @@ npx playwright install chromium
 | `demo/vendor/remark.min.js` | remark.js 0.14.1, vendored so the demo works without a CDN         |
 | `tests/`                    | Playwright tests, `tests/fixtures/` has a deck with custom options |
 | `scripts/serve.mjs`         | tiny static server for `npm start` and the Playwright web server   |
-| `assets/screenshot.png`     | README image, captured from the demo                               |
+| `docs/screenshots/main.png` | README image, captured from the demo                               |
 
 ## How it works 🔧
 
